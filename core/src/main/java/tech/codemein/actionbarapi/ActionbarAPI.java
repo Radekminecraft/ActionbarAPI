@@ -6,20 +6,30 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.logging.Level;
 
-
 public final class ActionbarAPI extends JavaPlugin {
-    static Actionbar ap;
+    private static Actionbar ap;
 
     static {
         try {
             String packageName = ActionbarAPI.class.getPackage().getName();
             String internalsName = Bukkit.getServer().getClass().getPackage().getName().split("\\.")[3];
-            ap = (Actionbar) Class.forName(packageName + "." + internalsName).newInstance();
+            Class<?> actionbarClass = Class.forName(packageName + "." + internalsName);
+            if (Actionbar.class.isAssignableFrom(actionbarClass)) {
+                ap = (Actionbar) actionbarClass.newInstance();
+            } else {
+                Bukkit.getLogger().log(Level.SEVERE, "Invalid Actionbar implementation for this server version.");
+            }
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | ClassCastException exception) {
-            Bukkit.getLogger().log(Level.SEVERE, "ItemUtil could not find a valid implementation for this server version.");
+            Bukkit.getLogger().log(Level.SEVERE, "Failed to initialize Actionbar implementation for this server version.", exception);
         }
     }
+
     public static void sendActionbar(Player player, String message) {
-        ap.sendActionbar(player, message);
+        if (ap != null) {
+            ap.sendActionbar(player, message);
+        } else {
+            // Handle the case where ap is null (no valid implementation found)
+            player.sendMessage("Actionbar not supported on this server version.");
+        }
     }
 }
