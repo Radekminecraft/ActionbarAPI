@@ -1,0 +1,4 @@
+name: ActionbarAPI
+version: '${project.version}'
+main: tech.codemein.actionbarplugin.ActionbarAPI
+api-version: 1.19
