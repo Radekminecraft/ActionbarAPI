@@ -13,6 +13,12 @@ public final class ActionbarAPI extends JavaPlugin {
         try {
             String packageName = ActionbarAPI.class.getPackage().getName();
             String internalsName = Bukkit.getServer().getClass().getPackage().getName().split("\\.")[3];
+            System.out.println(packageName + "." + internalsName);
+            System.out.println(packageName + "." + internalsName);
+            System.out.println(packageName + "." + internalsName);
+            System.out.println(packageName + "." + internalsName);
+            System.out.println(packageName + "." + internalsName);
+            System.out.println(packageName + "." + internalsName);
             Class<?> actionbarClass = Class.forName(packageName + "." + internalsName);
             if (Actionbar.class.isAssignableFrom(actionbarClass)) {
                 ap = (Actionbar) actionbarClass.newInstance();
