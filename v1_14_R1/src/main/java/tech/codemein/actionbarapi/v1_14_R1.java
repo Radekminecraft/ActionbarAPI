@@ -1,10 +1,9 @@
-package tech.codemein;
+package tech.codemein.actionbarapi;
 
 import net.minecraft.server.v1_14_R1.IChatBaseComponent;
 import net.minecraft.server.v1_14_R1.PacketPlayOutChat;
 import org.bukkit.craftbukkit.v1_14_R1.entity.CraftPlayer;
 import org.bukkit.entity.Player;
-import tech.codemein.actionbarapi.Actionbar;
 
 public class v1_14_R1 implements Actionbar {
     @Override

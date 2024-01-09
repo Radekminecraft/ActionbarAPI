@@ -6,9 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="actionbarapi-v_14_R1" />
-        <module name="actionbarapi-v_12_R1" />
+        <module name="actionbarapi-v1_14_R1" />
         <module name="actionbarapi-core" />
+        <module name="actionbarapi-v1_12_R1" />
       </profile>
       <profile name="Annotation profile for ActionbarAPI" enabled="true">
         <sourceOutputDir name="../target/generated-sources/annotations" />

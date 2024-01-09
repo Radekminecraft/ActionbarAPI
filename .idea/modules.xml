@@ -5,8 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/core/actionbarapi-core.iml" filepath="$PROJECT_DIR$/core/actionbarapi-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/dist/actionbarapi-dist.iml" filepath="$PROJECT_DIR$/dist/actionbarapi-dist.iml" />
       <module fileurl="file://$PROJECT_DIR$/actionbarapi-parent.iml" filepath="$PROJECT_DIR$/actionbarapi-parent.iml" />
-      <module fileurl="file://$PROJECT_DIR$/v_1_12_R1/actionbarapi-v_12_R1.iml" filepath="$PROJECT_DIR$/v_1_12_R1/actionbarapi-v_12_R1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/v_1_14/actionbarapi-v_14_R1.iml" filepath="$PROJECT_DIR$/v_1_14/actionbarapi-v_14_R1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/v_1_12_R1/actionbarapi-v1_12_R1.iml" filepath="$PROJECT_DIR$/v_1_12_R1/actionbarapi-v1_12_R1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/v_1_14/actionbarapi-v1_14_R1.iml" filepath="$PROJECT_DIR$/v_1_14/actionbarapi-v1_14_R1.iml" />
     </modules>
   </component>
 </project>
