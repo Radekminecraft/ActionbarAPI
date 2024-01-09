@@ -7,8 +7,8 @@
     <name>ActionbarAPI</name>
     <modules>
         <module>core</module>
-        <module>v_1_12_R1</module>
-        <module>v_1_14_R1</module>
+        <module>v1_12_R1</module>
+        <module>v1_14_R1</module>
         <module>dist</module>
     </modules>
     <dependencies>
